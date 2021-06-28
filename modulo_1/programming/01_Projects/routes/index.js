@@ -1,6 +1,6 @@
 //traemos el paquete
 const { Router } = require("express");
-
+const data =require("../data.json");
 //Inicializamos Router
 const router = Router()
 //creacion de los endpoint
@@ -30,7 +30,12 @@ router
         res.json({
           nombre:nombre,
         });
-      })
+      }).get("/user",(req,res)=>{
+        res.json({
+            msg:"Lista de usuario",
+            body:data
+        });
+    })
 
 //Exportamos las ruta
 module.exports.RouterIndex = router
