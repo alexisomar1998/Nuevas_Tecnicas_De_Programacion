@@ -1,14 +1,14 @@
 {
   "name": "servidor-web",
   "version": "1.0.0",
-  "description": "Practica de NPM",
+  "description": "uso de NPM",
   "main": "index.js",
   "scripts": {
-   "dev":"nodemon"
+    "dev":"nodemon"
   },
   "keywords": [
     "practica",
-    "NPM"
+    "npm"
   ],
   "author": "Alexis A.",
   "license": "MIT",
