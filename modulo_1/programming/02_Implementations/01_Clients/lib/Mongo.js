@@ -1,8 +1,7 @@
-const { MongoClient } = require("mongodb");
+const { MongoClient  } = require("mongodb");
 
-const DB_NAME = "";
-const URL =
-  "mongodb+srv://Alexis:<password>@modulo-1.ialcd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+const DB_NAME = "clients";
+const URL =`mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@modulo-1.ialcd.mongodb.net/${DB_NAME}?myFirstDatabase?retryWrites=true&w=majority`;
 
 var MongoConnection = () =>
   new Promise(async (resolve, reject) => {
